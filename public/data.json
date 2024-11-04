@@ -1,0 +1,241 @@
+[
+  {
+    "product_id": "P001",
+    "product_title": "Apple iPhone 15 Pro Max",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "iPhone",
+    "price": 1299,
+    "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
+    "specification": [
+      "6.7-inch Super Retina XDR display",
+      "A17 Bionic chip",
+      "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+      "LiDAR Scanner",
+      "Up to 2TB storage"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P002",
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Phones",
+    "price": 1199,
+    "description": "The new Galaxy S23 Ultra with the latest Snapdragon processor.",
+    "specification": [
+      "6.8-inch Dynamic AMOLED 2X display",
+      "Snapdragon 8 Gen 2",
+      "Quad-camera system (200MP Main, 10MP Periscope, 12MP Ultrawide)",
+      "5000mAh battery",
+      "Up to 1TB storage"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P003",
+    "product_title": "Google Pixel 8 Pro",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Phones",
+    "price": 999,
+    "description": "Google's latest Pixel with an improved AI camera.",
+    "specification": [
+      "6.7-inch LTPO OLED display",
+      "Google Tensor G3",
+      "Triple-camera system (50MP Main, 48MP Telephoto, 12MP Ultrawide)",
+      "5000mAh battery",
+      "Up to 512GB storage"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "P004",
+    "product_title": "Apple MacBook Air M2",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Macbook",
+    "price": 1199,
+    "description": "Lightweight and powerful with the new M2 chip.",
+    "specification": [
+      "13.6-inch Retina display",
+      "Apple M2 chip",
+      "8GB RAM, 256GB SSD",
+      "18-hour battery life",
+      "Fanless design"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "P005",
+    "product_title": "Sony WH-1000XM5",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Accessories",
+    "price": 399,
+    "description": "Industry-leading noise-canceling headphones.",
+    "specification": [
+      "40mm drivers",
+      "30-hour battery life",
+      "Touch controls",
+      "Multi-device connectivity",
+      "Foldable design"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "P006",
+    "product_title": "Dell XPS 13",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Laptops",
+    "price": 999,
+    "description": "Compact and powerful with a stunning display.",
+    "specification": [
+      "13.4-inch FHD+ display",
+      "Intel Core i7 11th Gen",
+      "16GB RAM, 512GB SSD",
+      "15-hour battery life",
+      "InfinityEdge display"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P007",
+    "product_title": "Samsung Galaxy Watch 6",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Smart Watches",
+    "price": 299,
+    "description": "Smartwatch with advanced health tracking features.",
+    "specification": [
+      "1.4-inch AMOLED display",
+      "BioActive sensor",
+      "40-hour battery life",
+      "ECG and blood pressure monitoring",
+      "5ATM water resistance"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P008",
+    "product_title": "Apple MacBook Pro M2",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Macbook",
+    "price": 1999,
+    "description": "Powerful performance with the M2 chip, perfect for creators.",
+    "specification": [
+      "14.2-inch Liquid Retina XDR display",
+      "Apple M2 Pro chip",
+      "16GB RAM, 512GB SSD",
+      "20-hour battery life",
+      "Thunderbolt 4 ports"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P009",
+    "product_title": "OnePlus 11 Pro",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Phones",
+    "price": 899,
+    "description": "OnePlus 11 Pro with fast performance and sleek design.",
+    "specification": [
+      "6.7-inch Fluid AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "Triple-camera system (50MP Main, 32MP Telephoto, 48MP Ultrawide)",
+      "5000mAh battery with 100W fast charging",
+      "Up to 512GB storage"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "P010",
+    "product_title": "ASUS ROG Zephyrus G14",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Laptops",
+    "price": 1499,
+    "description": "Gaming laptop with high performance in a compact form.",
+    "specification": [
+      "14-inch QHD display",
+      "AMD Ryzen 9",
+      "16GB RAM, 1TB SSD",
+      "NVIDIA GeForce RTX 4060",
+      "120Hz refresh rate"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P011",
+    "product_title": "Apple Watch Series 9",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Smart Watches",
+    "price": 399,
+    "description": "The latest Apple Watch with advanced health features.",
+    "specification": [
+      "1.9-inch Retina LTPO OLED display",
+      "S9 SiP chip",
+      "18-hour battery life",
+      "Blood Oxygen and ECG apps",
+      "Water-resistant to 50 meters"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P012",
+    "product_title": "Apple AirPods Pro 2",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Accessories",
+    "price": 249,
+    "description": "Enhanced active noise cancellation and transparency mode.",
+    "specification": [
+      "H2 chip",
+      "24-hour battery with case",
+      "Sweat and water resistant",
+      "Adaptive Transparency",
+      "Spatial audio support"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P013",
+    "product_title": "Lenovo ThinkPad X1 Carbon",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Laptops",
+    "price": 1399,
+    "description": "Premium business laptop with durability and performance.",
+    "specification": [
+      "14-inch FHD display",
+      "Intel Core i7 13th Gen",
+      "16GB RAM, 512GB SSD",
+      "Lightweight design",
+      "Fingerprint reader"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P014",
+    "product_title": "Bose QuietComfort Earbuds II",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Accessories",
+    "price": 279,
+    "description": "Comfortable fit and high-quality",
+    "specification": [
+      "14-inch FHD display",
+      "Intel Core i7 13th Gen",
+      "16GB RAM, 512GB SSD",
+      "Lightweight design",
+      "Fingerprint reader"
+    ],
+    "availability": true,
+    "rating": 4.7
+  }
+]
+
