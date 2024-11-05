@@ -4,14 +4,18 @@ import { MainContext } from '../App';
 export default function ProductInfo({p}) {
     const {product_title, product_image, price, availability, description, specification, rating}=p;
 
-    const {handleCart,cartData, handleWishlist}=useContext(MainContext)
+    const {handleCart,cartData, handleWishlist, wishlist}=useContext(MainContext)
 
-    const [isInWishlist, setIsInWishlist] = useState(false);
+    //const [isInWishlist, setIsInWishlist] = useState(false);
 
-    const handleAddToWishlist = () => {
-        handleWishlist(p);
-        setIsInWishlist(true);
-    };
+    // const handleAddToWishlist = () => {
+    //     handleWishlist(p);
+    //     setIsInWishlist(true);
+    // };
+     const hasIt=wishlist.includes(p);
+     //console.log(hasIt);
+     
+    // setIsInWishlist(hasIt);
    
     
 
@@ -33,10 +37,10 @@ export default function ProductInfo({p}) {
         <button className='btn' onClick={()=>handleCart(p)}>Add to Cart</button>
         <button
                 className='btn'
-                onClick={handleAddToWishlist}
-                disabled={isInWishlist}
+                onClick={()=>handleWishlist(p)}
+                disabled={hasIt}
             >
-                {isInWishlist ? 'Added to Wishlist' : 'Add to Wishlist'}
+                {hasIt ? 'Added to Wishlist' : 'Add to Wishlist'}
             </button>
     </div>
   )

@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { ProductContext } from './Home'
 import { useParams } from 'react-router-dom';
 import Product from './Product';
+import { Helmet } from 'react-helmet-async';
 
 export default function Products() {
 

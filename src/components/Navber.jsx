@@ -1,11 +1,14 @@
-import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import { FaShoppingCart } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa6";
+import React from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { FaShoppingCart, FaHeart } from 'react-icons/fa';
 
-export default function Navber() {
+export default function Navber({ cartCount = 0, wishlistCount = 0 }) {
+    const location = useLocation();
+    const {pathname} = location;
+    
+    
     return (
-        <div className="navbar bg-base-100">
+        <div className={`navbar bg-base-100 ${(pathname==='/')? 'bg-purple-600' : ''} rounded-xl`}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,26 +28,40 @@ export default function Navber() {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <NavLink>Home</NavLink>
-                        <NavLink>Statistics</NavLink>
-                        <NavLink>Dashboard</NavLink>
+                        <NavLink to="/" className={({ isActive }) => isActive ? 'text-purple-500' : ''}>Home</NavLink>
+                        <NavLink to="/statistics" className={({ isActive }) => isActive ? 'text-purple-500' : ''}>Statistics</NavLink>
+                        <NavLink to="/dashboard" className={({ isActive }) => isActive ? 'text-purple-500' : ''}>Dashboard</NavLink>
                     </ul>
                 </div>
-                <Link to={'/'} className="btn btn-ghost text-xl">Gadget Heaven</Link>
+                <Link to="/" className="btn btn-ghost text-xl">Gadget Heaven</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-2">
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink>Statistics</NavLink>
-                    <NavLink to={'/dashboard'}>Dashboard</NavLink>
+                    <NavLink to="/" className={({ isActive }) => isActive ? 'text-purple-500' : ''}>Home</NavLink>
+                    <NavLink to="/statistics" className={({ isActive }) => isActive ? 'text-purple-500' : ''}>Statistics</NavLink>
+                    <NavLink to="/dashboard" className={({ isActive }) => isActive ? 'text-purple-500' : ''}>Dashboard</NavLink>
                 </ul>
             </div>
             <div className="navbar-end">
-                <div className='flex gap-2'>
-                <FaShoppingCart></FaShoppingCart>
-                <FaHeart></FaHeart>
+                <div className="flex gap-4 relative items-center">
+                    <div className="relative">
+                        <FaShoppingCart className="text-xl" />
+                        {cartCount > 0 && (
+                            <span className="absolute -top-2 -left-2 bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">
+                                {cartCount}
+                            </span>
+                        )}
+                    </div>
+                    <div className="relative">
+                        <FaHeart className="text-xl" />
+                        {wishlistCount > 0 && (
+                            <span className="absolute -top-2 -left-2 bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">
+                                {wishlistCount}
+                            </span>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>
-    )
+    );
 }

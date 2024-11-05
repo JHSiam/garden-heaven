@@ -51,7 +51,7 @@ function App() {
   return (
     <>
     <div className='max-w-[1280px] mx-auto'>
-    <Navber></Navber>
+    <Navber cartCount={cartData.length} wishlistCount={wishlist.length}></Navber>
 
     <MainContext.Provider value={{data, setData, handleCart, cartData, setCartData, hanldeRemove, sortCartData, wishlist, handleWishlist}}>
       
