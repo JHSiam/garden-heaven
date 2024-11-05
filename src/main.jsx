@@ -1,7 +1,7 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import App from './App.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './components/Home.jsx';
 import Dashboard from './components/Dashboard.jsx';
@@ -9,57 +9,41 @@ import Products from './components/Products.jsx';
 import ProdectSection from './components/ProdectSection.jsx';
 import ProductDetails from './components/ProductDetails.jsx';
 
-
-
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App></App>,
-    children:[
+    element: <App />, // MainContext.Provider wraps Outlet here in App.js
+    children: [
       {
         path: "/",
-        element:<Home></Home>,
-        loader: ()=> fetch('./data.json'),
-        children:[
+        element: <Home />,
+        children: [
           {
             path: "/",
-            element:<ProdectSection></ProdectSection>,
-            children:[
-              {
-                path: "/",
-                element:<Products></Products>
-              },
-              {
-                path:"/:category",
-                element:<Products></Products>
-              }
+            element: <ProdectSection />,
+            children: [
+              { path: "/", element: <Products /> },
+              { path: "/:category", element: <Products /> }
             ]
           }
         ]
-        
       },
-      {
-        path: "/dashboard",
-        element: <Dashboard></Dashboard>
-      },
-
+      { path: "/dashboard",
+         element: <Dashboard/> },
       {
         path: "/:category/:product_id",
-        element: <ProductDetails></ProductDetails>,
-        loader: () => fetch('./data.json')
+        element: <ProductDetails />,
       },
-
       {
         path: "/:categoryi/:category/:product_id",
-        element: <ProductDetails></ProductDetails>,
-        loader: () => fetch('./data.json')
+        element: <ProductDetails />,
       }
     ]
-  },
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
-)
+  </StrictMode>
+);

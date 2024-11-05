@@ -2,29 +2,35 @@ import React, { createContext, useEffect, useState } from 'react'
 import { Outlet, useLoaderData } from 'react-router-dom'
 import ProdectSection from './ProdectSection'
 
-export const ProductContext=createContext();
+export const ProductContext = createContext();
 
 
 
 
 export default function Home() {
-  const data=useLoaderData()
+  // const data = useLoaderData()
 
 
-  const [products , setProducts]=useState([]);
+  const [products, setProducts] = useState([]);
 
-  useEffect(()=>{
-    setProducts(data);
-  },[data,setProducts])
+  // useEffect(() => {
+  //   setProducts(data);
+  // }, [data, setProducts])
+
+  useEffect(() => {
+    fetch('https://jhsiam.github.io/host-api/data.json')
+      .then(res => res.json())
+      .then(data => setProducts(data))
+  }, [])
 
 
-  
 
-  
 
- 
 
-  
+
+
+
+
 
   return (
     <div>
@@ -36,10 +42,10 @@ export default function Home() {
         </div>
         <img src="banner.jpg" alt="" className='w-[60%] mx-auto h-[400px] relative bottom-[150px] rounded-xl' />
       </div>
-      
-        <ProductContext.Provider value ={{products, setProducts}}>
+
+      <ProductContext.Provider value={{ products, setProducts }}>
         <Outlet></Outlet>
-        </ProductContext.Provider>
+      </ProductContext.Provider>
     </div>
 
   )

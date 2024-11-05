@@ -13,6 +13,9 @@ export default function Products() {
     const filteredProducts = category
     ? products.filter(p => p.category === category)
     : products;
+
+    // console.log(filteredProducts);
+    
     
 
 
