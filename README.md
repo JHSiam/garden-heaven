@@ -1,5 +1,5 @@
 Project Name: THis is a gadget Single page Ecommerce Site.
-Live Site: https://672b5ed0beadb96924cad7ca--kaleidoscopic-phoenix-9a950e.netlify.app/
+Live Site: https://672b63416f640942acb05925--kaleidoscopic-phoenix-9a950e.netlify.app/
 Requrement Doucument:
 API: https://jhsiam.github.io/host-api/product.json
 React Documentation: https://react.dev/learn
