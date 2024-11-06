@@ -10,11 +10,14 @@ import ProdectSection from './components/ProdectSection.jsx';
 import ProductDetails from './components/ProductDetails.jsx';
 import { HelmetProvider } from 'react-helmet-async';
 import Statistics from './components/Statistics.jsx';
+import ErrorPage from './components/ErrorPage.jsx';
+import SignUp from './components/SignUp.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />, // MainContext.Provider wraps Outlet here in App.js
+    element: <App />, 
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -43,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics></Statistics>
+      },
+      {
+        path: "/signup",
+        element: <SignUp></SignUp>
       }
     ]
   }

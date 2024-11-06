@@ -1,8 +1,19 @@
-# React + Vite
+Project Name: THis is a gadget Single page Ecommerce Site.
+Live Site: https://672b5ed0beadb96924cad7ca--kaleidoscopic-phoenix-9a950e.netlify.app/
+Requrement Doucument:
+API: https://jhsiam.github.io/host-api/product.json
+React Documentation: https://react.dev/learn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React Fundamentals Concepts Used In this Project:
+1. React Router Dom
+2. Context Api
+3. And other basic Concepts of react like(Component, props, etc)
 
-Currently, two official plugins are available:
+For Managing Data I have used Context API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+5 Feature of this Project
+1. Catagorize Product
+2. Add to cart feature
+3. Add to wishList
+4. Purchase Option
+5. Product Sorting Based on Price

@@ -3,6 +3,7 @@ import { MainContext } from '../App';
 import CartItem from './CartItem';
 import { useNavigate } from 'react-router-dom';
 
+
 export default function Cart() {
     const { cartData, hanldeRemove, sortCartData, setCartData } = useContext(MainContext);
     const [isModalOpen, setIsModalOpen] = useState(false);
