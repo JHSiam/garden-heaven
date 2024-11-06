@@ -5,9 +5,9 @@ import { Outlet } from 'react-router-dom'
 
 export default function ProdectSection() {
   return (
-    <div>
-        <h2 className='text-xl font-bold text-center'>Explore Cutting-Edge Gadgets</h2>
-        <div className='flex'>
+    <div className='flex flex-col gap-10 items-center'>
+        <h2 className='text-3xl font-bold text-center'>Explore Cutting-Edge Gadgets</h2>
+        <div className='flex justify-between gap-5'>
             <Categories></Categories>
             <div>
             <Outlet></Outlet>

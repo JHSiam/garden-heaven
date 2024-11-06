@@ -7,8 +7,8 @@ export default function Wishlist() {
 
   return (
     <div>
-        <h3>Wishlist</h3>
-        <div>
+        <h3 className='text-2xl font-bold'>Wishlist</h3>
+        <div className='flex flex-col gap-4 mt-10'>
             {
                 wishlist.map(p => <WishItem p={p} key={p.product_id}></WishItem>)
             }

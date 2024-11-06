@@ -25,7 +25,7 @@ export default function Dashboard() {
 
 
   return (
-    <div>
+    <div className='flex flex-col gap-14'>
       <Helmet>
         <title>Dashboard - Our Product</title>
       </Helmet>

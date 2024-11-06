@@ -4,6 +4,7 @@ import Navber from './components/Navber'
 import { Outlet } from 'react-router-dom'
 import Footer from './components/Footer'
 
+
 export const MainContext = createContext()
 
 
@@ -15,7 +16,7 @@ function App() {
   const [wishlist, setWishlist]=useState([])
 
   useEffect(() => {
-    fetch('https://jhsiam.github.io/host-api/data.json')
+    fetch('https://jhsiam.github.io/host-api/product.json')
       .then(res => res.json())
       .then(data => setData(data))
   }, [])
@@ -44,13 +45,13 @@ function App() {
 
   
   
-  //console.log(cartData);
+  
   
   
 
   return (
     <>
-    <div className='max-w-[1280px] mx-auto'>
+    <div className='max-w-[1280px] mx-auto sora-font'>
     <Navber cartCount={cartData.length} wishlistCount={wishlist.length}></Navber>
 
     <MainContext.Provider value={{data, setData, handleCart, cartData, setCartData, hanldeRemove, sortCartData, wishlist, handleWishlist}}>
@@ -60,8 +61,9 @@ function App() {
     </MainContext.Provider>
     
 
-    <Footer></Footer>
+    
     </div>
+    <Footer></Footer>
 
     
     </>

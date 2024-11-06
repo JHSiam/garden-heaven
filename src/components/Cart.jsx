@@ -5,46 +5,52 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Cart() {
     const { cartData, hanldeRemove, sortCartData, setCartData } = useContext(MainContext);
-    const [isModalOpen, setIsModalOpen] = useState(false); 
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const navigate = useNavigate();
 
     let totalPrice = 0;
     cartData.forEach(item => {
-      totalPrice += item.price;
+        totalPrice += item.price;
     });
 
-    let checkBtn=false;
+    let checkBtn = false;
 
-    if(cartData.length===0){
-      checkBtn=true;
+    if (cartData.length === 0) {
+        checkBtn = true;
     }
 
-    
+
     const handlePurchase = () => {
         setIsModalOpen(true);
         setCartData([]);
     };
 
-    
+
     const closeModal = () => {
         setIsModalOpen(false);
-         navigate('/');
+        navigate('/');
     };
 
     return (
         <div>
             <div className="flex justify-between items-center">
-                <h3 className="text-lg font-semibold">Cart</h3>
+                <h3 className="text-2xl font-bold">Cart</h3>
                 <div className="flex items-center gap-4">
                     <p>Total cost: ${totalPrice}</p>
                     <button className="btn" onClick={sortCartData}>Sort</button>
                     <button className="btn" onClick={handlePurchase} disabled={checkBtn}>Purchase</button>
                 </div>
             </div>
-            {cartData.map((p,i) => (
-                <CartItem p={p} hanldeRemove={hanldeRemove} key={p.product_id+i} />
-            ))}
+
+            <div className='flex flex-col gap-5 mt-7'>
+
+                {cartData.map((p, i) => (
+                    <CartItem p={p} hanldeRemove={hanldeRemove} key={p.product_id + i} />
+                ))}
+
+            </div>
+
 
             {/* Modal */}
             {isModalOpen && (

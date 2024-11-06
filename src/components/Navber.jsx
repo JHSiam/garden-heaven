@@ -8,7 +8,7 @@ export default function Navber({ cartCount = 0, wishlistCount = 0 }) {
     
     
     return (
-        <div className={`navbar bg-base-100 ${(pathname==='/')? 'bg-purple-600' : ''} rounded-xl`}>
+        <div className={`navbar bg-base-100 ${(pathname==='/')? 'bg-purple-600 text-white' : ''} rounded-xl`}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,9 +37,9 @@ export default function Navber({ cartCount = 0, wishlistCount = 0 }) {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 gap-2">
-                    <NavLink to="/" className={({ isActive }) => isActive ? 'text-purple-500' : ''}>Home</NavLink>
-                    <NavLink to="/statistics" className={({ isActive }) => isActive ? 'text-purple-500' : ''}>Statistics</NavLink>
-                    <NavLink to="/dashboard" className={({ isActive }) => isActive ? 'text-purple-500' : ''}>Dashboard</NavLink>
+                    <NavLink to="/" className={({ isActive }) => isActive ? 'text-yellow-300 font-bold' : ''}>Home</NavLink>
+                    <NavLink to="/statistics" className={({ isActive }) => isActive ? 'text-yellow-300 font-bold' : ''}>Statistics</NavLink>
+                    <NavLink to="/dashboard" className={({ isActive }) => isActive ? 'text-yellow-300 font-bold' : ''}>Dashboard</NavLink>
                 </ul>
             </div>
             <div className="navbar-end">

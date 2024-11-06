@@ -236,6 +236,58 @@
     ],
     "availability": true,
     "rating": 4.7
+  },
+  {
+    "product_id": "P015",
+    "product_title": "HP Spectre x360",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Laptops",
+    "price": 1399,
+    "description": "A sleek 2-in-1 laptop with stunning design and performance.",
+    "specification": [
+      "13.5-inch OLED touch display",
+      "Intel Core i7 12th Gen",
+      "16GB RAM, 512GB SSD",
+      "12-hour battery life",
+      "360-degree hinge for tablet mode"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P016",
+    "product_title": "Microsoft Surface Laptop 5",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Laptops",
+    "price": 1299,
+    "description": "A lightweight laptop with PixelSense touchscreen and long battery life.",
+    "specification": [
+      "13.5-inch PixelSense touchscreen",
+      "Intel Core i5 12th Gen",
+      "8GB RAM, 256GB SSD",
+      "17-hour battery life",
+      "Aluminum body"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "P017",
+    "product_title": "Acer Swift 5",
+    "product_image": "https://i.ibb.co.com/W5J50sd/Laptop.jpg",
+    "category": "Laptops",
+    "price": 1099,
+    "description": "Ultra-thin, ultra-light laptop with powerful performance.",
+    "specification": [
+      "14-inch Full HD display",
+      "Intel Core i7 11th Gen",
+      "16GB RAM, 1TB SSD",
+      "15-hour battery life",
+      "Antimicrobial coating"
+    ],
+    "availability": true,
+    "rating": 4.6
   }
+  
 ]
 
